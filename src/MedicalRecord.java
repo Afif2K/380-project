@@ -11,7 +11,6 @@ public class MedicalRecord {
     }
 
     // Getters and Setters
-    /* Will figure this part out later
     public DisasterVictim getVictim() {
         DisasterVictim[] occupants = location.getOccupants();
         if (occupants.length > 0) {
@@ -19,7 +18,7 @@ public class MedicalRecord {
         } else {
             return null; // Return null if no victim found
         }
-    }*/
+    }
 
     public void setVictim(DisasterVictim victim) {
         // Not implementing this setter assuming victim is derived from location

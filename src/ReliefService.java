@@ -62,11 +62,11 @@ public class ReliefService {
         System.out.println(getLogDetails());
     }
     //will finish this part out later
-    /*public String getLogDetails() {
-        return "Inquirer: " + inquirer.getName() + "\n" +
-                "Missing Person: " + missingPerson.getName() + "\n" +
+    public String getLogDetails() {
+        return "Inquirer: " + inquirer.getFirstName() + "\n" +
+                "Missing Person: " + missingPerson.getFirstName() + "\n" +
                 "Date of Inquiry: " + dateOfInquiry + "\n" +
                 "Info Provided: " + infoProvided + "\n" +
                 "Last Known Location: " + lastKnownLocation.getName() + ", " + lastKnownLocation.getAddress();
-    }*/
+    }
 }
