@@ -2,9 +2,11 @@ public class MedicalRecord {
     private Location location;
     private String treatmentDetails;
     private String dateOfTreatment;
-
     // Constructor
     public MedicalRecord(Location location, String treatmentDetails, String dateOfTreatment) {
+        if (location == null || treatmentDetails == null || dateOfTreatment == null) {
+            throw new IllegalArgumentException("Arguments cannot be null");
+        }
         this.location = location;
         this.treatmentDetails = treatmentDetails;
         this.dateOfTreatment = dateOfTreatment;
@@ -45,6 +47,9 @@ public class MedicalRecord {
     }
 
     public void setDateOfTreatment(String dateOfTreatment) {
+        if (dateOfTreatment == null) {
+            throw new IllegalArgumentException("Error, set date of treatment");
+        }
         this.dateOfTreatment = dateOfTreatment;
     }
 }

@@ -37,6 +37,9 @@ public class ReliefService {
     }
 
     public void setDateOfInquiry(String dateOfInquiry) {
+        if (dateOfInquiry == null || dateOfInquiry.isEmpty()) {
+            throw new IllegalArgumentException("Date of inquiry cannot be null or empty");
+        }
         this.dateOfInquiry = dateOfInquiry;
     }
 
