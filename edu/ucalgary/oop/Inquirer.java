@@ -5,7 +5,6 @@ public class Inquirer {
     private String INFO;
     private String SERVICES_PHONE;
 
-    // Constructor
     public Inquirer(String FIRST_NAME, String LAST_NAME, String SERVICES_PHONE, String INFO) {
         this.FIRST_NAME = FIRST_NAME;
         this.LAST_NAME = LAST_NAME;
@@ -13,7 +12,6 @@ public class Inquirer {
         this.INFO = INFO;
     }
 
-    // Getters
     public String getFirstName() {
         return FIRST_NAME;
     }

@@ -4,14 +4,12 @@ public class FamilyRelation {
     private String relationshipTo;
     private DisasterVictim personTwo;
 
-    // Constructor
     public FamilyRelation(DisasterVictim personOne, String relationshipTo, DisasterVictim personTwo) {
         this.personOne = personOne;
         this.relationshipTo = relationshipTo;
         this.personTwo = personTwo;
     }
 
-    // Getters and Setters
     public DisasterVictim getPersonOne() {
         return personOne;
     }

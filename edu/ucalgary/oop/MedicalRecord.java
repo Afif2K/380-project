@@ -3,7 +3,7 @@ public class MedicalRecord {
     private Location location;
     private String treatmentDetails;
     private String dateOfTreatment;
-    // Constructor
+
     public MedicalRecord(Location location, String treatmentDetails, String dateOfTreatment) {
         if (location == null || treatmentDetails == null || dateOfTreatment == null) {
             throw new IllegalArgumentException("Arguments cannot be null");
@@ -13,18 +13,17 @@ public class MedicalRecord {
         this.dateOfTreatment = dateOfTreatment;
     }
 
-    // Getters and Setters
     public DisasterVictim getVictim() {
         DisasterVictim[] occupants = location.getOccupants();
         if (occupants.length > 0) {
-            return occupants[0]; // Assuming there's only one victim per medical record
+            return occupants[0]; 
         } else {
-            return null; // Return null if no victim found
+            return null;
         }
     }
 
     public void setVictim(DisasterVictim victim) {
-        // Not implementing this setter assuming victim is derived from location
+        location.addOccupant(victim);
     }
 
     public Location getLocation() {

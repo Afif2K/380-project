@@ -7,7 +7,6 @@ public class Location {
     private ArrayList<DisasterVictim> occupants;
     private ArrayList<Supply> supplies;
 
-    // Constructor
     public Location(String name, String address) {
         this.name = name;
         this.address = address;
@@ -15,7 +14,6 @@ public class Location {
         this.supplies = new ArrayList<>();
     }
 
-    // Getters and Setters
     public String getName() {
         return name;
     }
@@ -54,7 +52,6 @@ public class Location {
         }
     }
 
-    // Add and Remove methods
     public void addOccupant(DisasterVictim occupant) {
         occupants.add(occupant);
     }
@@ -71,7 +68,6 @@ public class Location {
         supplies.remove(supply);
     }
 
-    // Update location details
     public void updateLog(String name, String address) {
         setName(name);
         setAddress(address);

@@ -13,7 +13,6 @@ public class DisasterVictim {
     private String ENTRY_DATE;
     private ArrayList<Supply> personalBelongings;
 
-    // Constructor
     public DisasterVictim(String firstName, String ENTRY_DATE) {
         this.firstName = firstName;
         this.ENTRY_DATE = ENTRY_DATE;
@@ -22,7 +21,6 @@ public class DisasterVictim {
         this.personalBelongings = new ArrayList<>();
     }
 
-    // Getters and Setters
     public String getFirstName() {
         return firstName;
     }
@@ -101,7 +99,6 @@ public class DisasterVictim {
         return personalBelongings;
     }
 
-    // Additional methods
     public void addSupply(Supply supply) {
         personalBelongings.add(supply);
     }

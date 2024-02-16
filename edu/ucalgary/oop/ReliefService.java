@@ -6,7 +6,6 @@ public class ReliefService {
     private String infoProvided;
     private Location lastKnownLocation;
 
-    // Constructor
     public ReliefService(Inquirer inquirer, DisasterVictim missingPerson, String dateOfInquiry,
                          String infoProvided, Location lastKnownLocation) {
         this.inquirer = inquirer;
@@ -16,7 +15,6 @@ public class ReliefService {
         this.lastKnownLocation = lastKnownLocation;
     }
 
-    // Getters and Setters
     public Inquirer getInquirer() {
         return inquirer;
     }
@@ -60,12 +58,9 @@ public class ReliefService {
         this.lastKnownLocation = lastKnownLocation;
     }
 
-    // Additional methods
     public void printLogDetails() {
-        // Print log details
         System.out.println(getLogDetails());
     }
-    //will finish this part out later
     public String getLogDetails() {
         return "Inquirer: " + inquirer.getFirstName() + "\n" +
                 "Missing Person: " + missingPerson.getFirstName() + "\n" +
