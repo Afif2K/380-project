@@ -1,3 +1,4 @@
+package edu.ucalgary.oop;
 public class Main {
     public static void main(String[] args) {
         DisasterVictim victim1 = new DisasterVictim("Freda", "2024-01-06");

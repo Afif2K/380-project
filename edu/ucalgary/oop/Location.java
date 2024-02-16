@@ -1,3 +1,4 @@
+package edu.ucalgary.oop;
 import java.util.ArrayList;
 
 public class Location {
